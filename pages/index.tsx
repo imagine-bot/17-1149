@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <main className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}>
       <Link href="/UserTableExample">Go to User Table Example</Link>
+      <Link href="/">Back</Link>
     </main>
   );
 }

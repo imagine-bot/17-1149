@@ -25,20 +25,20 @@ export const UserTable: React.FC<Props> = ({ users }) => {
   return (
     <div>
       <input type="text" value={filter} onChange={e => setFilter(e.target.value)} placeholder="Filter by name" />
-      <table>
+      <table className="mx-auto border-collapse border-2 border-light-blue-500 hover:border-light-blue-800">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone</th>
+            <th className="border-2 border-light-blue-500">Name</th>
+            <th className="border-2 border-light-blue-500">Email</th>
+            <th className="border-2 border-light-blue-500">Phone</th>
           </tr>
         </thead>
         <tbody>
           {filteredUsers.map((user, index) => (
-            <tr key={index}>
-              <td>{user.name}</td>
-              <td>{user.email}</td>
-              <td>{user.phone}</td>
+            <tr key={index} className="hover:bg-light-blue-200">
+              <td className="border-2 border-light-blue-500">{user.name}</td>
+              <td className="border-2 border-light-blue-500">{user.email}</td>
+              <td className="border-2 border-light-blue-500">{user.phone}</td>
             </tr>
           ))}
           <tr>
