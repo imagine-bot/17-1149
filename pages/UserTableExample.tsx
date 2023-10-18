@@ -7,5 +7,9 @@ const users = [
 ];
 
 export default function UserTableExample() {
-  return <UserTable users={users} />;
+  return (
+    <div className="flex justify-center items-center h-screen">
+      <UserTable users={users} />
+    </div>
+  );
 }
